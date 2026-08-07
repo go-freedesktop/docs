@@ -1,0 +1,61 @@
+site_name: go-freedesktop docs
+site_description: "Pure-Go (CGO=0) implementations of the freedesktop.org desktop-integration specifications: desktop entries, icon themes, MIME, application associations, the menu, and notifications."
+site_url: https://go-freedesktop.github.io/docs/
+repo_url: https://github.com/go-freedesktop
+repo_name: go-freedesktop
+edit_uri: ""
+
+theme:
+  name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - content.code.copy
+    - search.suggest
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra:
+  version:
+    provider: mike
+    default: latest
+
+nav:
+  - Home: index.md
+  - desktopentry: desktopentry.md
+  - icontheme: icontheme.md
+  - mime: mime.md
+  - mimeapps: mimeapps.md
+  - menu: menu.md
+  - notifications: notifications.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
