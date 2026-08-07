@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/desktopentry/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/icontheme/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/menu/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/mime/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/mimeapps/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+    <url>
+         <loc>https://go-freedesktop.github.io/docs/0.1/notifications/</loc>
+         <lastmod>2026-08-07</lastmod>
+    </url>
+</urlset>

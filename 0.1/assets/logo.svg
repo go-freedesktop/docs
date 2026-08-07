@@ -1,0 +1,15 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="go-freedesktop">
+  <defs>
+    <linearGradient id="gofreedesktop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="url(#gofreedesktop)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="56" y="66" width="144" height="98" rx="14"/>
+    <path d="M70 94H186"/>
+    <path d="M128 164V186"/>
+    <path d="M98 188H158"/>
+  </g>
+</svg>
