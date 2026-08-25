@@ -467,6 +467,66 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="secretservice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    secretservice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="screencast/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    screencast
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="x11/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    x11
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -542,7 +602,9 @@ desktop-integration specifications.</strong> No cgo, no D-Bus C library, no exte
 specifications a launcher, file manager or desktop shell relies on — enumerating
 installed applications, resolving icons, classifying files by MIME type, choosing
 which application opens a type, building the category menu, and serving desktop
-notifications. Each spec is one small module, so a caller pulls in only what it needs.</p>
+notifications. Each spec is one small module, so a caller pulls in only what it needs. Two of the
+modules are not specifications at all: <code>x11</code> is the X11 protocol's byte layer, and
+<code>screencast</code> is the capture built on it.</p>
 <h2 id="modules">Modules<a class="headerlink" href="#modules" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -582,6 +644,21 @@ notifications. Each spec is one small module, so a caller pulls in only what it 
 <td><a href="notifications/"><code>notifications</code></a></td>
 <td><a href="https://specifications.freedesktop.org/notification-spec/latest/">Desktop Notifications</a></td>
 <td>The <code>org.freedesktop.Notifications</code> D-Bus service side.</td>
+</tr>
+<tr>
+<td><a href="secretservice/"><code>secretservice</code></a></td>
+<td><a href="https://specifications.freedesktop.org/secret-service-spec/latest/">Secret Service</a></td>
+<td>Store and read secrets where the desktop already keeps them (GNOME Keyring, KWallet).</td>
+</tr>
+<tr>
+<td><a href="screencast/"><code>screencast</code></a></td>
+<td><em>(not a spec — X11)</em></td>
+<td>Capture the pixels of displays and windows. Wayland is not implemented, and says so.</td>
+</tr>
+<tr>
+<td><a href="x11/"><code>x11</code></a></td>
+<td><em>(not a spec — the protocol itself)</em></td>
+<td>The byte layer under <code>screencast</code> and <code>go-widgets/window</code>: wire codec, Xauthority, setup, MIT-SHM, <code>SCM_RIGHTS</code>.</td>
 </tr>
 </tbody>
 </table>
