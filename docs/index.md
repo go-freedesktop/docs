@@ -7,7 +7,9 @@ desktop-integration specifications.** No cgo, no D-Bus C library, no external to
 specifications a launcher, file manager or desktop shell relies on — enumerating
 installed applications, resolving icons, classifying files by MIME type, choosing
 which application opens a type, building the category menu, and serving desktop
-notifications. Each spec is one small module, so a caller pulls in only what it needs.
+notifications. Each spec is one small module, so a caller pulls in only what it needs. Two of the
+modules are not specifications at all: `x11` is the X11 protocol's byte layer, and
+`screencast` is the capture built on it.
 
 ## Modules
 
@@ -19,6 +21,9 @@ notifications. Each spec is one small module, so a caller pulls in only what it 
 | [`mimeapps`](mimeapps.md) | [MIME Applications Associations](https://specifications.freedesktop.org/mime-apps-spec/latest/) | Default application + ordered candidates for a MIME type. |
 | [`menu`](menu.md) | [Desktop Menu](https://specifications.freedesktop.org/menu-spec/latest/) | Turn `applications.menu` XML into a categorized tree of app entries. |
 | [`notifications`](notifications.md) | [Desktop Notifications](https://specifications.freedesktop.org/notification-spec/latest/) | The `org.freedesktop.Notifications` D-Bus service side. |
+| [`secretservice`](secretservice.md) | [Secret Service](https://specifications.freedesktop.org/secret-service-spec/latest/) | Store and read secrets where the desktop already keeps them (GNOME Keyring, KWallet). |
+| [`screencast`](screencast.md) | *(not a spec — X11)* | Capture the pixels of displays and windows. Wayland is not implemented, and says so. |
+| [`x11`](x11.md) | *(not a spec — the protocol itself)* | The byte layer under `screencast` and `go-widgets/window`: wire codec, Xauthority, setup, MIT-SHM, `SCM_RIGHTS`. |
 
 ## Design
 

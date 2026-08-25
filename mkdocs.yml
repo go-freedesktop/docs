@@ -46,6 +46,9 @@ nav:
   - mimeapps: mimeapps.md
   - menu: menu.md
   - notifications: notifications.md
+  - secretservice: secretservice.md
+  - screencast: screencast.md
+  - x11: x11.md
 
 markdown_extensions:
   - admonition
